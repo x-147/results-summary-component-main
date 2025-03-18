@@ -130,6 +130,16 @@ top container right styling
   border-radius: 25px;
   width: 82%;
   color: white;
+  border: none;
+}
+
+.top-container-right button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
 }
 
 /* 
@@ -140,7 +150,7 @@ top container left styling
 
 */
 
-.top-container {
+.top-container-left {
   width: 255px;
   height: 400px;
   background-color: hsl(252, 100%, 67%);
@@ -178,7 +188,7 @@ top container left styling
   opacity: 70%;
 }
 
-.top-container .score {
+.top-container-left .score {
   font-size: xxx-large;
   color: white;
   font-weight: 700;
