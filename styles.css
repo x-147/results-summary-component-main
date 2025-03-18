@@ -24,7 +24,13 @@ body {
   background-color: white;
 }
 
-/* top container right styling */
+/* 
+
+
+top container right styling 
+
+
+*/
 
 .top-container-right {
   width: 255px;
@@ -32,28 +38,107 @@ body {
   position: absolute;
   transform: translateX(50%);
   border-radius: 5%;
-  background-color: pink;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 }
 
+.summary {
+  font-size: large;
+  font-weight: 700;
+  width: 80%;
+}
+
+.blocks-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+}
+
 .block {
   width: 100%;
+  box-sizing: border-box;
+  padding: 10px 10px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+  border-radius: 15px;
 }
 
-.top-container-right .score:nth-child(1) {
+.aptitude {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.block .aptitude img {
+  margin-right: 10px;
+}
+
+.block.reaction-bg {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.block.reaction-bg .reaction {
+  color: hsl(0, 100%, 67%);
+}
+
+.block.memory-bg {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.block.memory-bg .memory {
+  color: hsl(39, 100%, 56%);
+}
+
+.block.verbal-bg {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.block.verbal-bg .verbal {
+  color: hsl(166, 100%, 37%);
+}
+
+.block.visual-bg {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.block.visual-bg .visual {
+  color: hsl(234, 85%, 45%);
+}
+
+.top-container-right .score span:first-child {
   font-size: small;
+  font-weight: 600;
 }
 
-.top-container-right .score:nth-child(2) {
+.top-container-right .score span:last-child {
   font-size: small;
+  font-weight: 600;
+  opacity: 40%;
 }
 
-/* top container left styling */
+.top-container-right button {
+  height: 45px;
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 25px;
+  width: 82%;
+  color: white;
+}
+
+/* 
+
+
+top container left styling
+
+
+*/
 
 .top-container {
   width: 255px;
