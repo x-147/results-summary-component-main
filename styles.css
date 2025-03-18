@@ -24,7 +24,36 @@ body {
   background-color: white;
 }
 
-/* top container styling */
+/* top container right styling */
+
+.top-container-right {
+  width: 255px;
+  height: 400px;
+  position: absolute;
+  transform: translateX(50%);
+  border-radius: 5%;
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.block {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.top-container-right .score:nth-child(1) {
+  font-size: small;
+}
+
+.top-container-right .score:nth-child(2) {
+  font-size: small;
+}
+
+/* top container left styling */
 
 .top-container {
   width: 255px;
@@ -64,7 +93,7 @@ body {
   opacity: 70%;
 }
 
-.score {
+.top-container .score {
   font-size: xxx-large;
   color: white;
   font-weight: 700;
