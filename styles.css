@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  background-color: hsl(221, 100%, 96%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* so that body extends to viewport instead 
+  of staying at .container size */
+  min-height: 100vh;
+  position: relative;
+}
+
+.container {
+  width: 510px;
+  height: 360px;
+  border-radius: 5%;
+  background-color: white;
+}
+
+.top-container {
+  width: 255px;
+  height: 360px;
+  background-color: hsl(252, 100%, 67%);
+  position: absolute;
+  transform: translateX(-50%);
+  border-radius: 5%;
+}
