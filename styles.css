@@ -217,3 +217,58 @@ top container left styling
   /* get it closer to .comment-one */
   margin-top: -10%;
 }
+
+@media (max-width: 510px) {
+  body {
+    display: flex;
+    /* stack elements vertically */
+    flex-direction: column;
+    /* removes 100vh constraint that forces body to take viewport height */
+    /* instead allows content to determine height */
+    min-height: auto;
+    position: relative;
+  }
+
+  /* cover gap between containers */
+  .container {
+    width: 100%;
+    max-width: 375px;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .top-container-left {
+    /* remove absolute positioning and transformation */
+    /* allows to follow normal document flow */
+    position: static;
+    transform: none;
+    /* set 100% width with reasonable max-width */
+    /* 375px standard breakpoint for responsive design */
+    width: 100%;
+    max-width: 375px;
+    border-radius: 0 0 30px 30px;
+    /* for flex layouts */
+    order: 1;
+  }
+
+  .top-container-right {
+    /* remove absolute positioning and transformation */
+    /* allows to follow normal document flow */
+    position: static;
+    transform: none;
+    /* set 100% width with reasonable max-width */
+    /* 375px standard breakpoint for responsive design */
+    width: 100%;
+    max-width: 375px;
+    /* for flex layouts */
+    order: 2;
+    /* desktop has .container with white, .container not needed when stacked */
+    background-color: white;
+    border-radius: 0px 0px 30px 30px;
+  }
+
+  .blocks-container {
+    width: 85%;
+  }
+}
