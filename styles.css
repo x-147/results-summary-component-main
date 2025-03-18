@@ -10,24 +10,86 @@ body {
   of staying at .container size */
   min-height: 100vh;
   position: relative;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
+
+/* main container styling */
 
 .container {
   width: 510px;
-  height: 360px;
+  height: 400px;
   border-radius: 5%;
   background-color: white;
 }
 
+/* top container styling */
+
 .top-container {
   width: 255px;
-  height: 360px;
+  height: 400px;
   background-color: hsl(252, 100%, 67%);
   position: absolute;
   transform: translateX(-50%);
   border-radius: 5%;
   background-image: linear-gradient(
-    hsla(256, 72%, 46%, 1) 10%,
+    hsl(252, 100%, 67%) 10%,
     hsl(241, 81%, 54%)
   );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.circle-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+}
+
+.result {
+  font-size: smaller;
+  color: white;
+  font-weight: 400;
+  opacity: 70%;
+}
+
+.score {
+  font-size: xxx-large;
+  color: white;
+  font-weight: 700;
+}
+
+.total {
+  font-size: small;
+  color: white;
+  opacity: 40%;
+}
+
+.comment-one {
+  font-size: large;
+  color: white;
+}
+
+.comment-two {
+  font-size: smaller;
+  font-weight: 300;
+  color: white;
+  opacity: 60%;
+  /* move text to center, default flush on left */
+  text-align: center;
+  /* max width content can take in container */
+  max-width: 80%;
+  /* get it closer to .comment-one */
+  margin-top: -10%;
 }
